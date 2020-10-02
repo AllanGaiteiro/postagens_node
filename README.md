@@ -1,13 +1,12 @@
 # Post_Express
  
- 
- Descrição:
-Uma Aplicação de postagem de mensagem utilizando o framework EXPRESS. Também foi usado os módulos Sequelize, Hadlebars, Body-Parser.
+#Descrição:
+Uma Aplicação de postagem de mensagem utilizando o framework EXPRESS. Também foi usado os módulos Sequelize, Had#lebars, Body-Parser.
 
 
 Detalhamento:
 Adicionar novo post
- ![alt text](https://prnt.sc/us1ida)
+ 
 https://prnt.sc/us1ida
 Na Home do Sistema no caminho (“/”), a um botão adicionar novo post, com ele você será direcionado para o caminha de criação de post (“/cad”).
  
@@ -26,3 +25,4 @@ Body-Parse: facilitar a passagem de parâmetro da página para o servidor de um 
 Handlebars: aprendi que ao usar o handlebars deve se atentar a versão dele pois algumas versões não permite o requerimento dos dados para o cliente
 Fim
 fim desse pequeno projeto, que teve o intuito de me ajudar na expansão do meu conhecimento em NodeJS, Express, e ate banco de dados com o Sequelize
+
