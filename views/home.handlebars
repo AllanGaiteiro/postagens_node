@@ -1,0 +1,73 @@
+<style>
+    #meusPost{
+        background-color: rgb(87, 125, 241);
+        padding: 40px;
+        
+    }
+    .posts{
+        background-color: rgb(87, 125, 241);
+        padding: 10px;
+        margin-bottom: 20px;
+        border-bottom: solid white 4px;
+        border-left: solid white 4px;
+        border-right: solid white 4px;
+        border-radius:   0% 0% 10% 10% ;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5) ;
+    }
+    .posts p{
+        background-color: white;
+        padding: 20px;
+        width: 850px;
+        color: black;
+    }
+    
+    .posts small,.posts a{
+        margin-top: -40px;
+        float: right;
+    }
+    #novoPost{
+               text-align: center;
+    }
+    #novoPost button{
+        font-size: 20px;
+        width: 90px;
+        height: 30px;
+        text-align: center;
+    }
+
+</style>
+
+
+<main id="meusPost">
+  <header>
+      <h1>Lista de Postagens</h1>
+      <p>aki é onde voce posta seus posts ideias, comentarios oq vc desejar</p>
+  </header>
+        
+    <section>
+
+
+    {{#each posts}}
+
+    <article class="posts">
+        
+        <h2>{{titulo}}</h2>
+        <small>{{createdAt}}</small>
+        <p>{{post}}</p>
+        <a href="/delPost/{{id}}"><button>Deletar</button></a>
+
+    </article>
+        
+
+        
+
+        
+    {{/each}}
+    <p id="novoPost">
+        Adcionar novo Posto
+        <a href="/cad" ><button>    +   </button></a>
+        
+    </p>
+
+    </section>
+</main>

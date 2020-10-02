@@ -1,0 +1,31 @@
+<style>
+    form{
+        background-color: rgb(87, 125, 241);
+        margin: auto;
+        width: 600px;
+        padding: 20px;
+    }
+    textarea{
+        margin: 0px;
+        width: 100%;
+        height: 60px;
+
+    }
+    #posTitulo{
+        display: inline-block;
+    }
+    h2{
+        
+        text-align: center;
+    }
+</style>
+
+
+<form action="/add" method="POST">
+    <h2> Digite sua postagem abaixo</h2>
+    <p id="posTitulo">Titulo:</p>
+    <input type="text" name="titulo" id="titulo">
+    <p>Conteudo: </p>
+    <textarea  name="conteudo" id="conteudo" cols="30" rows="10" style="resize: vertical"></textarea>
+    <button type="submit">Cadastrar</button>
+</form>
